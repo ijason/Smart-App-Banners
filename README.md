@@ -28,8 +28,6 @@ Include smart-app-banner.min.js file at the end of your page.  Be sure to includ
 <script src="./js/smart-app-banner.min.js"></script>
 ```
 
-Copy start-rating.png into an img directory on your server.
-
 *Note: Responsive or mobile web pages are required for optimal app banner display.*
 
 ## Credit
