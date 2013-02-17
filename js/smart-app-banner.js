@@ -3,7 +3,8 @@ var origHtmlMargin = parseFloat($('html').css('margin-top'));
 $(function() {      
   var iPad = navigator.userAgent.match(/iPad/i) != null; // Check if using an iPad
   var iPhone = navigator.userAgent.match(/iPhone/i) != null; // Check if using an iPhone
-  var safari = $.browser.safari; // Check if using Safari
+  var safari = navigator.userAgent.match(/Safari/i) != null; // Check if using Safari
+
   var standalone = navigator.standalone;
   var appBannerID = $('meta[name=apple-itunes-app]').attr("content"); //Check if using smart app banners
   if (!standalone && safari) { safari = false}; //Chrome is just a re-skinning of iOS WebKit UIWebView
