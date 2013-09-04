@@ -21,6 +21,10 @@ $(function() {
           formattedPrice = json.results[0].formattedPrice;
           averageUserRatingForCurrentVersion = json.results[0].averageUserRatingForCurrentVersion;
           trackCensoredName = json.results[0].trackCensoredName;
+          
+          //make sure rating is not null. 
+          if (averageUserRating == null) { averageUserRating = 0; }
+          if (averageUserRatingForCurrentVersion == null) { averageUserRatingForCurrentVersion = 0; }
 
           var banner = '<div class="smart-banner">';  
           banner += '<a href="#" id="swb-close" onclick="CloseSmartBanner()">X</a>';
