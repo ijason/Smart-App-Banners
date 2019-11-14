@@ -10,7 +10,7 @@ $(function() {
   if (appBannerID != null) { 
     appBannerID = /app-id=([0-9]+)/.exec(appBannerID)[1]; // maybe developers add some parameter like that app-argument=http://domain.com/path/to/page
     if ((iPad || iPhone) && (!safari)) {
-      $.getJSON('http://itunes.apple.com/lookup?id=' + appBannerID + '&callback=?', function(json) {
+      $.getJSON('https://itunes.apple.com/lookup?id=' + appBannerID + '&callback=?', function(json) {
         if (json != null) {
           var artistName, artistViewUrl, artworkUrl60, averageUserRating, formattedPrice, trackCensoredName, averageUserRatingForCurrentVersion;
           artistName = json.results[0].artistName;
